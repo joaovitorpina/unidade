@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: br.com.informacaoquesalva
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, data, data-r2dbc, gradle, http-client, jackson-databind, java, java-application, junit, logback, micronaut-build, mysql, netty-server, r2dbc, reactor, reactor-http-client, readme, shade, testcontainers, yaml, openapi, swagger-ui ]

@@ -1,0 +1,24 @@
+micronaut:
+  application:
+    name: unidade
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+netty:
+  default:
+    allocator:
+      max-order: 3
+r2dbc:
+  datasources:
+    default:
+      url: r2dbc:mysql://localhost:3306/unidades
+      username: root
+      password: 'root'
+      schema-generate: CREATE_DROP
+      dialect: MYSQL
+
